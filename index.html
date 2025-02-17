@@ -26,13 +26,52 @@
 <body>
   <h1>polaris-chip</h1>
   <!-- this is going to do whatever the tag's defaults are -->
-  <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
+  <polaris-chip title="Stuff of Record" link="https://psu.edu/"></polaris-chip>
   <polaris-chip title="Faculty and Staff"></polaris-chip>
   <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
   <polaris-chip title="Grants and donations"></polaris-chip>
 
   <h1>my-card</h1>
-  <my-card></my-card>
+  <button id="toggleButton">Toggle Fancy</button>
+  <style>
+    my-card[fancy] {
+      --my-card-fancy-bg: #FF0000;
+    }
+    </style>
+  <my-card 
+  title="Penn State University" 
+  image="https://images.onwardstate.com/uploads/2014/02/NittanyLionLogo.jpg"
+  button="Details" buttonLink="https://www.psu.edu/">
+  <p>The <strong>Pennsylvania State University</strong> was established on February 22, 1855. It has a total enrollment of 88,116.</p>
+</my-card>
+
+  <my-card
+  title="Temple University"
+  image="https://ttn-media.s3.amazonaws.com/wp-content/uploads/2023/08/01102429/Screen-Shot-2023-08-01-at-10.21.10-AM.png" 
+  button="Details" buttonLink="https://www.temple.edu/">
+  <p><strong>Temple University</strong> is a public state-related research university in Philadelphia, Pennsylvania, United States. It was founded in 1884.</p>
+</my-card>
+
+  <my-card 
+  title="UCLA" 
+  image="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/2560px-UCLA_Bruins_script.svg.png" 
+  button="Details" buttonLink="https://www.ucla.edu/">
+  <p>The<strong> University of California, Los Angeles</strong> is a public land-grant research university in Los Angeles, California, United States. Its academic roots were established in 1881.</p>
+</my-card>
+
+  <my-card 
+  title="University of Pittsburgh" 
+  image="https://content.sportslogos.net/logos/33/803/full/pittsburgh_panthers_logo_primary_dark_20197761.png" 
+  button="Details" buttonLink="https://www.pitt.edu/">
+  <p>The <strong>University of Pittsburgh</strong> is an independent, state-related, doctoral/research university in Pittsburgh, Pennsylvania, United States.</p>
+</my-card>
+
+  <my-card 
+  title="University of Pennsylvania" 
+  image="https://www.boldsummers.com/wp-content/uploads/2020/12/University-of-Pennsylvania.png"
+  button="Details" buttonLink="https://www.upenn.edu/">
+  <p>The <strong>University of Pennsylvania</strong> (Penn) was founded in 1740 by Benjamin Franklin. It's one of the oldest universities in the United States and a member of the Ivy League.</p>
+</my-card>
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
